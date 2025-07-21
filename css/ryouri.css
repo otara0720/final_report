@@ -165,10 +165,11 @@ body {
 /* ここからレスポンシブ対応 */
 @media (max-width: 768px) {
     .header-inner {
+        display: flex;                  /* ← 必須 */
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;            /* ← 中央に配置 */
+        width: 100%;                    /* 横幅いっぱいに */
     }
-
     .header-site-menu .site-menu ul {
         display: flex;
         flex-direction: row;         /* 横並び */
@@ -198,6 +199,12 @@ body {
 
     .main-logo img {
         width: 90%;
+    }
+
+    .footer-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer .site-menu ul {

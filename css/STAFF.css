@@ -119,10 +119,10 @@ ul {
 
 @media (max-width: 768px) {
     .header-inner {
+        display: flex;                  /* ← 必須 */
         flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 20px;
+        align-items: center;            /* ← 中央に配置 */
+        width: 100%;                    /* 横幅いっぱいに */
     }
 
     .site-menu ul {
@@ -135,9 +135,9 @@ ul {
     }
 
     .footer-inner {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
     .footer .site-menu ul {
