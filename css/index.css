@@ -148,68 +148,83 @@ body {
 
 /* --- レスポンシブ --- */
 @media (max-width: 800px) {
-  /* ヘッダー */
+  /* ヘッダー全体を縦並び＆中央寄せ */
   .header-inner {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* 中央寄せ */
+    align-items: center;
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
   }
 
-  .site-menu ul {
+  /* ロゴ画像のサイズ調整 */
+  .header-logo img {
+    width: 120px;
+    height: auto;
+  }
+
+  /* ヘッダー内メニューを横並びで中央寄せ */
+  .header-site-menu {
+    width: 100%;
     display: flex;
-    flex-direction: row;       /* 横並び */
-    justify-content: center;   /* 中央寄せ */
-    width: 100%;               /* 幅いっぱい */
-    margin: 10px 0 0;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .header-site-menu .site-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
     padding: 0;
+    margin: 0;
     list-style: none;
+    width: auto; /* 必要に応じて100%でも */
   }
 
-  .site-menu li {
-    margin: 0 10px;
+  .header-site-menu .site-menu li {
+    margin: 0;
   }
 
-  /* フッター */
+  /* フッター全体の設定 */
   .footer {
-    align-items: center;
-    text-align: center;
     padding: 20px 10px;
+    text-align: center;
   }
 
-  .footer-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .footer .site-menu {
     width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
   }
 
   .footer .site-menu ul {
     display: flex;
-    flex-direction: row;       /* 横並び */
-    justify-content: center;   /* 中央寄せ */
-    width: 100%;               /* 幅いっぱい */
-    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
     padding: 0;
+    margin: 0 auto;
     list-style: none;
   }
 
   .footer .site-menu li {
-    margin: 0 10px;
+    margin: 0;
   }
 
-  .footer-logo {
-    width: 180px;
-    margin-top: 40px;
+  /* フッターロゴがあればサイズ調整 */
+  .footer-logo img {
+    max-width: 180px;
+    height: auto;
+    margin-top: 20px;
   }
 
   .copyright {
     font-size: 12pt;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
+
 
