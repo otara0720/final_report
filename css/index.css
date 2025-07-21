@@ -179,7 +179,7 @@ body {
   }
 
   .header-site-menu .site-menu a {
-    font-size: 1.5rem;          /* 文字サイズ小さめ */
+    font-size: 1.2rem;          /* 適度な文字サイズ */
     font-weight: bold;
     color: #333;
   }
@@ -222,7 +222,7 @@ body {
   }
 
   .footer .site-menu a {
-    font-size: 0.9rem;          /* 文字サイズ小さめ */
+    font-size: 1rem;          /* 少し大きめ */
     font-weight: bold;
     color: #333;
   }
@@ -233,7 +233,7 @@ body {
   }
 
   .copyright {
-    font-size: 0.8rem;          /* さらに小さめ */
+    font-size: 0.9rem;          /* 読みやすいサイズ */
     margin-top: 20px;
   }
 }
