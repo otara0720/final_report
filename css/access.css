@@ -151,16 +151,17 @@ body {
     }
 
     .header-site-menu .site-menu ul {
-        flex-direction: row;       /* 横並び */
-        justify-content: center; /* 右詰め */
-        width: 100%;               /* 幅いっぱいにする */
+        display: flex;
+        flex-direction: row;         /* 横並び */
+        justify-content: center;     /* 中央寄せ */
+        width: 100%;                 /* 幅いっぱいにする */
         margin-top: 10px;
         padding: 0;
     }
 
     .header-site-menu .site-menu li {
         margin-left: 10px;
-        margin-bottom: 0;          /* 縦方向の隙間は不要 */
+        margin-bottom: 0;            /* 縦方向の隙間は不要 */
     }
 
     .title {
@@ -180,9 +181,10 @@ body {
     }
 
     .footer .site-menu ul {
-        flex-direction: row;       /* 横並び */
-        justify-content: center; /* 右詰め */
-        width: 100%;               /* 幅いっぱいにする */
+        display: flex;
+        flex-direction: row;         /* 横並び */
+        justify-content: center;     /* 中央寄せ */
+        width: 100%;
         margin-top: 10px;
         padding: 0;
     }
@@ -195,4 +197,5 @@ body {
         height: 300px;
     }
 }
+
 

@@ -124,11 +124,23 @@ ul {
     }
   
     .site-menu ul {
-        flex-direction: row;       /* 横並び */
-        justify-content: center; /* 右詰め */
-        width: 100%;               /* 幅いっぱいにする */
-        margin-top: 10px;
-        padding: 0;
+      display: flex;
+      flex-direction: row;         /* 横並び */
+      justify-content: center;     /* 中央寄せ */
+      width: 100%;
+      margin-top: 10px;
+      padding: 0;
+      list-style: none;
+    }
+  
+    .footer .site-menu ul {
+      display: flex;
+      flex-direction: row;         /* 横並び */
+      justify-content: center;     /* 中央寄せ */
+      width: 100%;
+      margin-top: 10px;
+      padding: 0;
+      list-style: none;
     }
   
     .member {
@@ -140,14 +152,6 @@ ul {
     .member img {
       width: 120px;
       height: 120px;
-    }
-  
-    .footer .site-menu ul {
-        flex-direction: row;       /* 横並び */
-        justify-content: center; /* 右詰め */
-        width: 100%;               /* 幅いっぱいにする */
-        margin-top: 10px;
-        padding: 0;
     }
   
     .main {
@@ -162,4 +166,5 @@ ul {
       font-size: 1.25rem;
     }
   }
+  
   

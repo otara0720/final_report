@@ -163,6 +163,9 @@ body {
     height: 100%;
     padding: 0 20px;
     flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .header-logo {
@@ -170,15 +173,17 @@ body {
   }
 
   .site-menu ul {
-    flex-direction: row;       /* 横並び */
-    justify-content: center; /* 右詰め */
-    width: 100%;               /* 幅いっぱいにする */
-    margin-top: 10px;
+    display: flex;
+    flex-direction: row;         /* 横並び */
+    justify-content: center;     /* 中央寄せ */
+    width: 100%;
+    margin: 10px 0 0;
     padding: 0;
+    list-style: none;
   }
 
   .site-menu li {
-    margin-top: 12px;
+    margin: 0 10px;
   }
 
   .first-view {
@@ -217,15 +222,17 @@ body {
   }
 
   .footer .site-menu ul {
-    flex-direction: row;       /* 横並び */
-    justify-content: center; /* 右詰め */
-    width: 100%;               /* 幅いっぱいにする */
+    display: flex;
+    flex-direction: row;         /* 横並び */
+    justify-content: center;     /* 中央寄せ */
+    width: 100%;
     margin-top: 10px;
     padding: 0;
+    list-style: none;
   }
 
   .footer .site-menu li {
-    margin: 10px 0;
+    margin: 0 10px;
   }
 
   .footer-logo {
