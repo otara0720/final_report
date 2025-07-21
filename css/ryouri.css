@@ -164,59 +164,71 @@ body {
 
 /* ここからレスポンシブ対応 */
 @media (max-width: 768px) {
+    /* ヘッダー全体を縦並びにして幅いっぱいに */
     .header-inner {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: center; /* 中央寄せ */
       width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
   
+    /* ロゴのサイズ調整 */
+    .header-logo img {
+      width: 120px;
+      height: auto;
+    }
+  
+    /* ヘッダー内のメニューラップ */
     .header-site-menu {
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: center; /* メニューを中央寄せ */
+      margin-top: 10px;
     }
   
+    /* ヘッダーメニューのul */
     .header-site-menu .site-menu ul {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      width: 100%; /* 幅いっぱい */
-      margin-top: 10px;
+      width: auto; /* 必要なら100%でもOK */
       padding: 0;
+      margin: 0;
       list-style: none;
+      gap: 20px;
     }
   
     .header-site-menu .site-menu li {
-      margin: 10px;
+      margin: 0; /* ギャップで調整 */
     }
   
-    .footer-inner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
+    /* フッターを縦並び中央寄せ */
+    .footer {
+      padding: 20px 10px;
+      text-align: center;
     }
   
+    /* フッター内のメニューも横並び中央寄せ */
     .footer .site-menu {
-      width: 100%;
       display: flex;
       justify-content: center;
+      width: 100%;
     }
   
     .footer .site-menu ul {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      width: 100%; /* 幅いっぱい */
-      margin-top: 10px;
       padding: 0;
+      margin: 0 auto;
       list-style: none;
+      gap: 20px;
     }
   
     .footer .site-menu li {
-      margin: 10px;
+      margin: 0;
     }
   }
   
-
