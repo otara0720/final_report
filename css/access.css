@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff9f0;
+    color: #333;
+}
+
+/* ヘッダー */
+.header {
+    background-color: #ffc10770;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo img {
+    height: 60px;
+    display: block;
+}
+
+/* メニューのトグルボタン（必要なら後で表示切替） */
+.toggle-menu-button {
+    display: none;
+}
+
+/* ヘッダーサイトメニュー */
+.header-site-menu .site-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-site-menu .site-menu li {
+    margin-left: 20px;
+}
+
+.header-site-menu .site-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.08em;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.header-site-menu .site-menu a:hover {
+    color: #e91e63;
+}
+
+/* メインコンテンツ */
+.main {
+    padding: 30px 20px;
+}
+
+/* タイトル部分は背景画像なしで、テキストだけスタイリング */
+.title {
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/ryouri/ryouri1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.title h1 {
+    font-size: 2.5em;
+    color: #e91e63;
+    background-color: white;
+    padding: 0.2em 0.6em;
+    border-radius: 10px;
+    display: inline-block;
+    text-shadow: none;
+}
+
+/* 地図 */
+.map {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.map h2 {
+    font-size: 1.8em;
+    color: #2e86c1;
+    margin-bottom: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 0;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* フッター */
+.footer {
+    background-color: #ffc10770;
+    padding: 20px 10px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .site-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer .site-menu a {
+    text-decoration: none;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.08em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer .site-menu a:hover {
+    color: #e91e63;
+}
+
+.footer-logo {
+    margin-left: auto;
+}
+
+.footer-logo img {
+    height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-site-menu .site-menu ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header-site-menu .site-menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        height: auto;
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    .title h1 {
+        font-size: 2em;
+        padding: 0.4em 0.8em;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .site-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo {
+        margin: 20px 0 0 0;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+}
