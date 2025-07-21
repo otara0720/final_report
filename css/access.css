@@ -146,22 +146,35 @@ body {
 
 @media screen and (max-width: 768px) {
     .header-inner {
+        display: flex;                  /* ← 必須 */
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;            /* ← 中央に配置 */
+        width: 100%;                    /* 横幅いっぱいに */
+    }
+
+    .header-site-menu {
+        width: 100%;
+    }
+
+    .header-site-menu .site-menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .header-site-menu .site-menu ul {
         display: flex;
-        flex-direction: row;         /* 横並び */
-        justify-content: center;     /* 中央寄せ */
-        width: 100%;                 /* 幅いっぱいにする */
+        flex-direction: row;            /* 横並び */
+        justify-content: center;        /* 中央寄せ */
+        width: 100%;
         margin-top: 10px;
         padding: 0;
+        list-style: none;
     }
 
     .header-site-menu .site-menu li {
         margin-left: 10px;
-        margin-bottom: 0;            /* 縦方向の隙間は不要 */
+        margin-bottom: 0;
     }
 
     .title {
@@ -176,17 +189,19 @@ body {
     }
 
     .footer-inner {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .footer .site-menu ul {
         display: flex;
-        flex-direction: row;         /* 横並び */
-        justify-content: center;     /* 中央寄せ */
+        flex-direction: row;
+        justify-content: center;
         width: 100%;
         margin-top: 10px;
         padding: 0;
+        list-style: none;
     }
 
     .footer-logo {
@@ -197,5 +212,3 @@ body {
         height: 300px;
     }
 }
-
-

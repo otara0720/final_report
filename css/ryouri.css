@@ -173,7 +173,7 @@ body {
         display: flex;
         flex-direction: row;         /* 横並び */
         justify-content: center;     /* 中央寄せ */
-        width: 100%;
+        width: 50%;
         margin-top: 10px;
         padding: 0;
         list-style: none;
@@ -204,7 +204,7 @@ body {
         display: flex;
         flex-direction: row;         /* 横並び */
         justify-content: center;     /* 中央寄せ */
-        width: 100%;
+        width: 50%;
         margin-top: 10px;
         padding: 0;
         list-style: none;
