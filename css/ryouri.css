@@ -165,60 +165,58 @@ body {
 /* ここからレスポンシブ対応 */
 @media (max-width: 768px) {
     .header-inner {
-        display: flex;                  /* ← 必須 */
-        flex-direction: column;
-        align-items: center;            /* ← 中央に配置 */
-        width: 100%;                    /* 横幅いっぱいに */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
+  
+    .header-site-menu {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
     .header-site-menu .site-menu ul {
-        display: flex;
-        flex-direction: row;         /* 横並び */
-        justify-content: center;     /* 中央寄せ */
-        width: 50%;
-        margin-top: 10px;
-        padding: 0;
-        list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%; /* 幅いっぱい */
+      margin-top: 10px;
+      padding: 0;
+      list-style: none;
     }
-
+  
     .header-site-menu .site-menu li {
-        margin: 10px;
+      margin: 10px;
     }
-
-    .feature {
-        flex-direction: column;
-    }
-
-    .feature.reverse {
-        flex-direction: column;
-    }
-
-    .title h1 {
-        font-size: 1.8em;
-        padding: 0.3em 0.5em;
-    }
-
-    .main-logo img {
-        width: 90%;
-    }
-
+  
     .footer-inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
-
+  
+    .footer .site-menu {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
     .footer .site-menu ul {
-        display: flex;
-        flex-direction: row;         /* 横並び */
-        justify-content: center;     /* 中央寄せ */
-        width: 50%;
-        margin-top: 10px;
-        padding: 0;
-        list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%; /* 幅いっぱい */
+      margin-top: 10px;
+      padding: 0;
+      list-style: none;
     }
-
+  
     .footer .site-menu li {
-        margin: 10px;
+      margin: 10px;
     }
-}
+  }
+  
 

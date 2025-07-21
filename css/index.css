@@ -148,33 +148,21 @@ body {
 
 /* --- レスポンシブ --- */
 @media (max-width: 800px) {
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    z-index: 10;
-    background-color: #ffc107;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  }
-
+  /* ヘッダー */
   .header-inner {
-    display: flex;                  /* ← 必須 */
+    display: flex;
     flex-direction: column;
-    align-items: center;            /* ← 中央に配置 */
-    width: 100%;                    /* 横幅いっぱいに */
-  }
-
-  .header-logo {
-    width: 100px;
+    align-items: center;  /* 中央寄せ */
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   .site-menu ul {
     display: flex;
-    flex-direction: row;         /* 横並び */
-    justify-content: center;     /* 中央寄せ */
-    width: 50%;
+    flex-direction: row;       /* 横並び */
+    justify-content: center;   /* 中央寄せ */
+    width: 100%;               /* 幅いっぱい */
     margin: 10px 0 0;
     padding: 0;
     list-style: none;
@@ -184,55 +172,30 @@ body {
     margin: 0 10px;
   }
 
-  .first-view {
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 40px;
-  }
-
-  .first-view-text {
-    padding: 10px 20px;
-  }
-
-  .first-view-text h1 {
-    font-size: 32px;
-    line-height: 40px;
-    text-align: center;
-  }
-
-  .first-view-text2 {
-    font-size: 14px;
-    padding: 10px 20px;
-    text-align: center;
-  }
-
-  .first-view-text2 .highlight-text {
-    font-size: 14px;
-    padding: 8px 10px;
-  }
-
+  /* フッター */
   .footer {
     align-items: center;
     text-align: center;
     padding: 20px 10px;
   }
 
-  .footer .site-menu ul {
-    display: flex;
-    flex-direction: row;         /* 横並び */
-    justify-content: center;     /* 中央寄せ */
-    width: 50%;
-    margin-top: 10px;
-    padding: 0;
-    list-style: none;
-  }
-
   .footer-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .footer .site-menu ul {
+    display: flex;
+    flex-direction: row;       /* 横並び */
+    justify-content: center;   /* 中央寄せ */
+    width: 100%;               /* 幅いっぱい */
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
   }
 
   .footer .site-menu li {
@@ -249,3 +212,4 @@ body {
     margin-top: 20px;
   }
 }
+
