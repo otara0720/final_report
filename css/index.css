@@ -179,7 +179,7 @@ body {
   }
 
   .header-site-menu .site-menu a {
-    font-size: 0.9rem;          /* 適度な文字サイズ */
+    font-size: 0.7rem;          /* 適度な文字サイズ */
     font-weight: bold;
     color: #333;
   }
