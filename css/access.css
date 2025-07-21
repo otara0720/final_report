@@ -152,7 +152,7 @@ body {
 
     .header-site-menu .site-menu ul {
         flex-direction: row;       /* 横並び */
-        justify-content: flex-end; /* 右詰め */
+        justify-content: center; /* 右詰め */
         width: 100%;               /* 幅いっぱいにする */
         margin-top: 10px;
         padding: 0;
@@ -180,8 +180,11 @@ body {
     }
 
     .footer .site-menu ul {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;       /* 横並び */
+        justify-content: center; /* 右詰め */
+        width: 100%;               /* 幅いっぱいにする */
+        margin-top: 10px;
+        padding: 0;
     }
 
     .footer-logo {

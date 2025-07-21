@@ -170,10 +170,11 @@ body {
   }
 
   .site-menu ul {
-    display: block;
-    text-align: right;
-    margin-top: 60px;
-    padding-right: 10px;
+    flex-direction: row;       /* 横並び */
+    justify-content: center; /* 右詰め */
+    width: 100%;               /* 幅いっぱいにする */
+    margin-top: 10px;
+    padding: 0;
   }
 
   .site-menu li {
@@ -216,7 +217,10 @@ body {
   }
 
   .footer .site-menu ul {
-    display: block;
+    flex-direction: row;       /* 横並び */
+    justify-content: center; /* 右詰め */
+    width: 100%;               /* 幅いっぱいにする */
+    margin-top: 10px;
     padding: 0;
   }
 
