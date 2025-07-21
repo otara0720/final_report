@@ -119,52 +119,32 @@ ul {
 
 @media (max-width: 768px) {
     .header-inner {
-      flex-direction: column;
-      align-items: flex-start;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
     }
-  
+
     .site-menu ul {
-      display: flex;
-      flex-direction: row;         /* 横並び */
-      justify-content: center;     /* 中央寄せ */
-      width: 50%;
-      margin-top: 10px;
-      padding: 0;
-      list-style: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
     }
-  
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .footer .site-menu ul {
-      display: flex;
-      flex-direction: row;         /* 横並び */
-      justify-content: center;     /* 中央寄せ */
-      width: 50%;
-      margin-top: 10px;
-      padding: 0;
-      list-style: none;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
     }
-  
-    .member {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .member img {
-      width: 120px;
-      height: 120px;
-    }
-  
-    .main {
-      padding: 1rem;
-    }
-  
-    .members h2 {
-      font-size: 1.5rem;
-    }
-  
-    .member dt {
-      font-size: 1.25rem;
-    }
-  }
-  
-  
+}
